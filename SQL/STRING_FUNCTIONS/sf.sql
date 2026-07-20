@@ -88,4 +88,4 @@ SELECT REPLACE(city, 'Chennai', 'Bangalore') from emp;
 select split_part(email,'@',2) from emp;
 
 
-select split_part(email,'@',2) from emp;
+select split_part(email,'@',1) from emp;
