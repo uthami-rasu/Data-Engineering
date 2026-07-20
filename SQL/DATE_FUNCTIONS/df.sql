@@ -125,12 +125,22 @@ SELECT (EXTRACT(YEAR FROM AGE(NOW()::DATE, TO_DATE('20-06-2025','DD-MM-YYYY'))) 
 
 -- # Task 6: DATE_TRUNC()
 
-/*
-1. Beginning of hour
-2. Beginning of day
-3. Beginning of week
-4. Beginning of month
-5. Beginning of quarter
-6. Beginning of year
 
-/*
+-- 1. Beginning of hour
+SELECT DATE_TRUNC('hour',NOW());
+
+-- 2. Beginning of day
+SELECT DATE_TRUNC('day',NOW());
+
+-- 3. Beginning of week
+SELECT DATE_TRUNC('week',NOW());
+
+--4. Beginning of month
+SELECT DATE_TRUNC('month',NOW());
+
+--5. Beginning of quarter
+SELECT DATE_TRUNC('quarter',NOW());
+
+-- 6. Beginning of year
+SELECT DATE_TRUNC('year',NOW());
+
